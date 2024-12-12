@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800 bg-orange-50;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .custom-scrollbar {
+    @apply overflow-y-auto;
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.orange.500') theme('colors.orange.100');
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-orange-100 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-orange-500 rounded-full hover:bg-orange-600 transition-colors;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-orange-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-600;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .custom-scrollbar {
+    scrollbar-width: none;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sidebar-mobile-hidden {
+    @apply -translate-x-full;
+  }
+}
