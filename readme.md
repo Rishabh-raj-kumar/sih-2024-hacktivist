@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Simhastha Tracker is an advanced tracking system designed to enhance safety and security during the Simhastha Mela (a large Hindu gathering in Ujjain, India)[cite: 1]. This system leverages cutting-edge AI and facial recognition technology to assist in reuniting families and managing emergencies[cite: 1]. It provides tools for reporting and locating missing persons, tracking the status of cases, and real-time surveillance with violence detection capabilities[cite: 1, 6, 7].
+The Simhastha Tracker is an advanced tracking system designed to enhance safety and security during the Simhastha Mela (a large Hindu gathering in Ujjain, India). This system leverages cutting-edge AI and facial recognition technology to assist in reuniting families and managing emergencies. It provides tools for reporting and locating missing persons, tracking the status of cases, and real-time surveillance with violence detection capabilities.
 
 ## Key Features
   <img src="assets/ss_1.png"/>
