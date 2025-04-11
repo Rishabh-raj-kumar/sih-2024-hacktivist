@@ -129,7 +129,7 @@ def main(host, port):
     client_thread.start()
     
     # Start Flask app
-    app.run(host='0.0.0.0', port=5000, threaded=True)
+    app.run(host='0.0.0.0', port=5004, threaded=True)
 
 
 if __name__ == "__main__":
